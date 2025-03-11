@@ -52,7 +52,7 @@ const AboutSection = () => {
                   ].map((item, index) => (
                     <motion.div
                       key={index}
-                      className="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-3xl transition duration-300"
+                      className="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300"
                       variants={cardVariants}
                       initial="initial"
                       whileInView="animate"
