@@ -80,7 +80,7 @@ export default function ProjectCard() {
                     Live Demo <FaExternalLinkAlt />
                   </a>
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 flex items-center gap-2">
-                    Code. <FaGithub />
+                    Code <FaGithub />
                   </a>
                 </div>
               </div>
