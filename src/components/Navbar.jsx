@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full">
-      <nav className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] border-b-2 border-gray-300 dark:border-gray-600 text-black dark:text-white py-4 px-6 shadow-lg">
+      <nav className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] border-b-2 border-gray-300 dark:border-gray-600 text-black dark:text-white py-4 shadow-lg">
         <Sectionwraper>
           <div className="mx-auto flex justify-between items-center">
             <Link className="text-4xl font-extrabold text-blue-600 dark:text-blue-400 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg">
@@ -20,8 +20,8 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <ul className="hidden md:flex space-x-6 text-xl">
-              {["home", "about", "services", "contact"].map((item) => (
+            <ul className="hidden md:flex space-x-6 text-xl items-center">
+              {["home", "about", "skills", "projects", "contact us"].map((item) => (
                 <Link
                   key={item}
                   to={item}
@@ -72,7 +72,7 @@ const Navbar = () => {
                 />
               </div>
               <ul className="flex flex-col items-center mt-8 space-y-6">
-                {["home", "about", "services", "contact"].map((item) => (
+                {["home", "about", "skills", "projects", "contact us"].map((item) => (
                   <Link
                     key={item}
                     to={item}

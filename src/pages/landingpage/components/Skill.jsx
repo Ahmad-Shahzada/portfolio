@@ -59,11 +59,11 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <div className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] pt-14 pb-36">
+    <div id="skills" className="md:pt-28 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] pb-36">
       <Sectionwraper>
         <section className="text-black dark:text-white text-center">
           <motion.h2
-            className="text-5xl font-extrabold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300"
+            className="pb-10 text-5xl font-extrabold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -102,7 +102,8 @@ export default function SkillsSection() {
               {skills.map((skill, index) => (
                 <SwiperSlide key={index}>
                   <motion.div
-                    className=" p-8 bg-gray-100 dark:bg-gray-800 rounded-3xl flex flex-col items-center gap-4 shadow-xl cursor-pointer border border-gray-300 dark:border-gray-700"
+                   className="p-8 bg-gray-100 dark:bg-gray-800 rounded-3xl flex flex-col items-center gap-4 cursor-pointer border border-gray-300 dark:border-gray-700 transition-all duration-500 hover:shadow-[0px_0px_10px_rgba(59,130,246,0.4),0px_0px_20px_rgba(139,92,246,0.4),0px_0px_30px_rgba(59,130,246,0.2)]"
+
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1, duration: 0.5 }}

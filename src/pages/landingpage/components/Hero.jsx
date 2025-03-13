@@ -48,6 +48,7 @@ const Hero = () => {
               </span>
             </p>
             <motion.button
+            to=""
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 text-lg font-semibold text-white transition-all duration-300 
