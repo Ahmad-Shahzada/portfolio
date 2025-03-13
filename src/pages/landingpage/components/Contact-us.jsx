@@ -29,7 +29,7 @@ export default function ContactUs() {
                 className="lg:w-1/2 p-6 flex flex-col justify-center text-center lg:text-left"
               >
                 <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-10">
-                  Let's Connect
+                  Let's Connect 
                 </h2>
                 <p className="text-gray-600 dark:text-gray-500 mb-6">
                   Feel free to reach out for collaborations or just a friendly
