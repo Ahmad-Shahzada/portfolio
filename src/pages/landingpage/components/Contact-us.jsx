@@ -12,7 +12,7 @@ import Sectionwraper from "/src/components/Sectionwraper";
 
 export default function ContactUs() {
   return (
-    <div className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]">
+    <div className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] ">
       <Sectionwraper>
         <div className="">
           <h1 className="text-center text-5xl font-bold pt-14">Contact Me</h1>
@@ -20,7 +20,7 @@ export default function ContactUs() {
             id="contact us"
             className="pb-10 pt-20 flex items-center justify-center"
           >
-            <div className="bg-white dark:bg-gray-900 shadow-2xl rounded-3xl p-10 flex flex-col lg:flex-row w-full max-w-6xl">
+            <div className="bg-white dark:bg-gray-900 shadow-2xl rounded-3xl p-4 md:p-10 flex flex-col lg:flex-row w-full">
               {/* Left Side - Contact Info */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -47,33 +47,9 @@ export default function ContactUs() {
                     <FaMapMarkerAlt className="mr-2 text-blue-500" /> Sargodha,Punjab,Pakistan
                   </p>
                 </div>
-                {/* Social Media Icons */}
-                <div className="mt-10 flex justify-center lg:justify-start space-x-6">
-                  <a
-                    href="#"
-                    className="text-blue-500 text-2xl hover:text-blue-400 transition"
-                  >
-                    <FaFacebook />
-                  </a>
-                  <a
-                    href="#"
-                    className="text-blue-500 text-2xl hover:text-blue-400 transition"
-                  >
-                    <FaTwitter />
-                  </a>
-                  <a
-                    href="#"
-                    className="text-blue-500 text-2xl hover:text-blue-400 transition"
-                  >
-                    <FaLinkedin />
-                  </a>
-                  <a
-                    href="#"
-                    className="text-blue-500 text-2xl hover:text-blue-400 transition"
-                  >
-                    <FaGithub />
-                  </a>
-                </div>
+                  <div>
+                    <h1 className="text-2xl pt-10 font-bold">Ahmad Shahzad</h1>
+                    </div>                
               </motion.div>
 
               {/* Right Side - Contact Form */}

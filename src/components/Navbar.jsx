@@ -61,7 +61,6 @@ const Navbar = () => {
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
-              exit={{ x: "100%" }}
               transition={{ duration: 0.3 }}
               className="fixed top-0 right-0 w-full h-full bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-6 px-4"
             >
@@ -78,7 +77,7 @@ const Navbar = () => {
                     to={item}
                     smooth={true}
                     duration={800}
-                    offset={-70} // Navbar overlap fix
+                    
                     className="text-lg text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 cursor-pointer"
                     onClick={() => setIsOpen(false)}
                   >

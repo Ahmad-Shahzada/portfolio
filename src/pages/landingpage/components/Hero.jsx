@@ -2,10 +2,14 @@ import { motion } from "framer-motion";
 import Sectionwraper from "/src/components/Sectionwraper";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div id="home" className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-20 md:pt-52 md:pb-40 flex items-center">
+    <div
+      id="home"
+      className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-20 md:pt-52 md:pb-40 flex items-center"
+    >
       <Sectionwraper>
         <div className="pt-16 flex flex-col-reverse lg:flex-row items-center justify-between w-full">
           <motion.div
@@ -47,8 +51,59 @@ const Hero = () => {
                 ideas to life.
               </span>
             </p>
+            <motion.div
+              className="flex justify-center lg:justify-start mt-6 space-x-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              {[
+                {
+                  href: "https://web.facebook.com/profile.php?id=61560327763898",
+                  icon: <FaFacebook size={18} className="dark:text-white text-gray-700" />,
+                },
+                {
+                  href: "https://www.instagram.com/ahmadshahzad4220/?hl=en",
+                  icon: <FaInstagram size={18} className="dark:text-white text-gray-700" />,
+                },
+                {
+                  href: "https://linkedin.com",
+                  icon: <FaLinkedin size={18} className="dark:text-white text-gray-700" />,
+                },
+                {
+                  href: "https://github.com/Ahmad-Shahzada",
+                  icon: <FaGithub size={18} className="dark:text-white text-gray-700" />,
+                },
+              ].map((item, index) => (
+                <motion.a
+                  key={index}
+                  href={item.href}
+                  target="_blank"
+                  className="p-5 w-[40px] h-[40px] flex items-center justify-center rounded-full mb-4
+      backdrop-blur-md bg-white dark:bg-white/10 border border-white/20 
+      shadow-[0px_0px_15px_rgba(59,130,246,0.8)] transition-all duration-300"
+                  whileHover={{
+                    scale: 1.4, // Pop-out effect
+                    rotate: 5,
+                    boxShadow: "0px 0px 30px rgba(59,130,246,1)", // Stronger glow on hover
+                  }}
+                  whileTap={{ scale: 1 }}
+                  animate={{ y: [0, -5, 0] }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
+                >
+                  {/* Icon */}
+                  <span className="text-white text-2xl drop-shadow-lg">
+                    {item.icon}
+                  </span>
+                </motion.a>
+              ))}
+            </motion.div>
+
             <motion.button
-            to=""
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 text-lg font-semibold text-white transition-all duration-300 
@@ -59,7 +114,10 @@ const Hero = () => {
             >
               Let's Talk
             </motion.button>
+
+            {/* Social Media Icons */}
           </motion.div>
+
           {/* Right Image */}
           <motion.div
             initial={{ x: 100, opacity: 0 }}

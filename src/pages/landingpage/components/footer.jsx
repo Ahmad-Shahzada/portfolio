@@ -3,9 +3,9 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]">
     <Sectionwraper>
-    <footer className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-5">
+    <footer className=" py-5">
       <div className="container mx-auto px-6 lg:px-20 flex flex-col md:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="text-center md:text-left mb-6 md:mb-0">
@@ -15,16 +15,16 @@ export default function Footer() {
         
         {/* Social Media Icons */}
         <div className="flex space-x-6 text-2xl">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+          <a href="https://web.facebook.com/profile.php?id=61560327763898" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
             <FaFacebook />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition">
+          <a href="https://www.instagram.com/ahmadshahzad4220/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition">
             <FaInstagram />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
             <FaLinkedin />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
+          <a href="https://github.com/Ahmad-Shahzada" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
             <FaGithub />
           </a>
         </div>
