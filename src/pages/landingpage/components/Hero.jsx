@@ -3,6 +3,7 @@ import Sectionwraper from "/src/components/Sectionwraper";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import myImg from '../../../../public/assets/images/bg1.png'
 
 const Hero = () => {
   return (
@@ -128,7 +129,7 @@ const Hero = () => {
           >
             {/* Profile Image with Enhanced Shadows */}
             <motion.img
-              src="/src/assets/images/bg1.png"
+              src={myImg}
               alt="Profile"
               className="rounded-[80%] w-[70%] sm:w-[60%] md:w-[50%] lg:w-[400px] lg:ml-60 
           shadow-[0px_0px_40px_rgba(59,130,246,0.7),0px_0px_80px_rgba(139,92,246,0.7),0px_0px_100px_rgba(59,130,246,0.5)] 

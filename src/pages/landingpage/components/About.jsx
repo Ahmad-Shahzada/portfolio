@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Sectionwraper from "/src/components/Sectionwraper";
 import { FaCode, FaLaptopCode, FaTools, FaLightbulb } from "react-icons/fa";
+import myImg from '../../../../public/assets/images/bg1.png'
+
 
 const cardVariants = {
   initial: { opacity: 0, y: 50 },
@@ -32,7 +34,7 @@ const AboutSection = () => {
           <div className="flex flex-col lg:flex-row items-center text-black dark:text-white pb-20 md:pb-0 md:py-20">
             <div className="w-full lg:w-1/2 flex pl-0 lg:pl-10 justify-center md:justify-normal mb-10 lg:mb-0 lg:mr-48">
               <motion.img
-                src="/src/assets/images/bg1.png"
+                src={myImg}
                 alt="Profile"
                 className="rounded-full w-40 sm:w-60 md:w-80 lg:w-[350px] shadow-[0px_0px_40px_rgba(59,130,246,0.7),0px_0px_80px_rgba(139,92,246,0.7),0px_0px_100px_rgba(59,130,246,0.5)] transition-all duration-500"
                 initial={{ opacity: 0, scale: 0.8 }}

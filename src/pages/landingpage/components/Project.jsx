@@ -2,6 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Sectionwraper from "/src/components/Sectionwraper";
+import img1 from "../../../../public/assets/images/ecommerce.png";
+import img2 from "../../../../public/assets/images/Travel.png";
+import img3 from "../../../../public/assets/images/resturent.png";
+import img4 from "../../../../public/assets/images/redux.png";
+import img5 from "../../../../public/assets/images/to-do.png";
+import img6 from "../../../../public/assets/images/form.png";
+
+
 
 const projects = [
   {
@@ -9,42 +17,42 @@ const projects = [
     description:"A modern and user-friendly e-commerce website with a sleek design, seamless navigation, and secure checkout.",
     link: "https://ahmad-shahzada.github.io/E-commerce/",
     github: "https://github.com/Ahmad-Shahzada/E-commerce",
-    image: "/src/assets/images/ecommerce.png"
+    image: img1
   },
   {
     title: "Project Two",
     description: "A beautiful multi pages travel website using HTML , CSS ",
     link: "https://ahmad-shahzada.github.io/TRAVEL/",
     github: "https://github.com/Ahmad-Shahzada/TRAVEL",
-    image: "/src/assets/images/Travel.png"
+    image: img2
   },
   {
     title: "Project Three",
     description: "A Resturent website ui design fully responsive and attractive.",
     link: "https://ahmad-shahzada.github.io/Ahmad.shahzad/",
     github: "https://github.com/Ahmad-Shahzada/Ahmad.shahzad",
-    image: "/src/assets/images/resturent.png"
+    image: img3
   },
   {
     title: "Project four",
     description:"Applying redux with add to cart function fetching data using axious.",
     link: "https://redux-drab-nine.vercel.app/",
     github: "https://github.com/Ahmad-Shahzada/redux",
-    image: "/src/assets/images/redux.png"
+    image: img4
   },
   {
     title: "Project five",
     description: "A beautiful To-Do app using HTML , CSS and JAVASCRIPT",
     link: "https://ahmad-shahzada.github.io/to-do-app/",
     github: "https://github.com/Ahmad-Shahzada/to-do-app",
-    image: "/src/assets/images/to-do.png"
+    image: img5
   },
   {
     title: "Project six",
     description: "user registration form with validation.",
     link: "https://form-six-kohl.vercel.app/",
     github: "https://github.com/Ahmad-Shahzada/form/tree/main",
-    image: "/src/assets/images/form.png"
+    image: img6
   }
 ];
 
