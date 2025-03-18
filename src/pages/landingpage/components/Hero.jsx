@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-20 md:pt-52 md:pb-14 flex items-center"
+      className="pb-5 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-20 md:pt-52 md:pb-14 flex items-center"
     >
       <Sectionwraper>
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full">

@@ -23,7 +23,7 @@ const AboutSection = () => {
             About Me
           </motion.h2>
           <motion.p
-            className="text-base sm:text-lg md:text-xl text-gray-800 dark:text-gray-300 mb-12 leading-relaxed max-w-6xl text-justify md:text-center mx-auto"
+            className="text-base sm:text-lg md:text-xl text-gray-800 dark:text-gray-300 mb-16 leading-relaxed max-w-6xl text-justify md:text-center mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
