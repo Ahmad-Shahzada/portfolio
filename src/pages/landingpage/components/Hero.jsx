@@ -3,7 +3,7 @@ import Sectionwraper from "/src/components/Sectionwraper";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import myImg from '../../../../public/assets/images/bg1.png'
+import myImg from "../../../../public/assets/images/bg1.png";
 
 const Hero = () => {
   return (
@@ -61,19 +61,39 @@ const Hero = () => {
               {[
                 {
                   href: "https://web.facebook.com/profile.php?id=61560327763898",
-                  icon: <FaFacebook size={18} className="dark:text-white text-gray-700" />,
+                  icon: (
+                    <FaFacebook
+                      size={18}
+                      className="dark:text-white text-gray-700"
+                    />
+                  ),
                 },
                 {
                   href: "https://www.instagram.com/ahmadshahzad4220/?hl=en",
-                  icon: <FaInstagram size={18} className="dark:text-white text-gray-700" />,
+                  icon: (
+                    <FaInstagram
+                      size={18}
+                      className="dark:text-white text-gray-700"
+                    />
+                  ),
                 },
                 {
                   href: "https://linkedin.com",
-                  icon: <FaLinkedin size={18} className="dark:text-white text-gray-700" />,
+                  icon: (
+                    <FaLinkedin
+                      size={18}
+                      className="dark:text-white text-gray-700"
+                    />
+                  ),
                 },
                 {
                   href: "https://github.com/Ahmad-Shahzada",
-                  icon: <FaGithub size={18} className="dark:text-white text-gray-700" />,
+                  icon: (
+                    <FaGithub
+                      size={18}
+                      className="dark:text-white text-gray-700"
+                    />
+                  ),
                 },
               ].map((item, index) => (
                 <motion.a
