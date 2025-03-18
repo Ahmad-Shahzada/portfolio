@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link } from "react-scroll"; // ONLY react-scroll, NOT react-router-dom
+import { Link } from "react-scroll"; 
 import { FiMenu, FiX } from "react-icons/fi";
 import { motion } from "framer-motion";
 import Sectionwraper from "./Sectionwraper";

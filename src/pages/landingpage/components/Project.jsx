@@ -58,7 +58,7 @@ const projects = [
 
 export default function ProjectCard() {
   return (
-    <div id="projects" className="md:pt-10 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]">
+    <div id="projects" className="md:pt-3 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]">
     <Sectionwraper>
     <section className="pt-10 text-white">
       <div className="container mx-auto text-center">

@@ -62,7 +62,7 @@ export default function SkillsSection() {
   return (
     <div
       id="skills"
-      className="md:pt-32 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] pb-36"
+      className="md:pt-32 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] pb-14"
     >
       <Sectionwraper>
         <section className="text-black dark:text-white text-center">

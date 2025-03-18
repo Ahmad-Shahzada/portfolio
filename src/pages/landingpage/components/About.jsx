@@ -11,7 +11,7 @@ const cardVariants = {
 
 const AboutSection = () => {
   return (
-    <div id="about" className="pt-5 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]">
+    <div id="about" className=" bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]">
       <Sectionwraper>
         <div className="container px-4 sm:px-6 lg:px-8">
           <motion.h2
@@ -31,7 +31,7 @@ const AboutSection = () => {
             I'm a creative <span className="text-blue-600 dark:text-blue-400 font-semibold">Frontend Developer</span> with a passion for building sleek, fast, and user-friendly web applications. My goal is to deliver exceptional <span className="text-blue-600 dark:text-blue-400 font-semibold">UI/UX experiences</span> using modern technologies like <span className="text-blue-600 dark:text-blue-400 font-semibold">React, Tailwind CSS, JavaScript, and Redux</span>. I thrive on turning innovative ideas into functional and visually appealing designs that enhance user engagement and satisfaction.
           </motion.p>
 
-          <div className="flex flex-col lg:flex-row items-center text-black dark:text-white pb-20 md:pb-0 md:py-20">
+          <div className="flex flex-col lg:flex-row items-center text-black dark:text-white pb-20 md:pb-0 md:py-10">
             <div className="w-full lg:w-1/2 flex pl-0 lg:pl-10 justify-center md:justify-normal mb-10 lg:mb-0 lg:mr-48">
               <motion.img
                 src={myImg}
