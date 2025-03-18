@@ -9,10 +9,10 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-20 md:pt-52 md:pb-20 flex items-center"
+      className="bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-20 md:pt-52 md:pb-14 flex items-center"
     >
       <Sectionwraper>
-        <div className="pt-4 flex flex-col-reverse lg:flex-row items-center justify-between w-full">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
