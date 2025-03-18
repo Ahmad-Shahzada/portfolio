@@ -52,7 +52,7 @@ const projects = [
     description: "user registration form with validation.",
     link: "https://form-six-kohl.vercel.app/",
     github: "https://github.com/Ahmad-Shahzada/form/tree/main",
-    image: img6
+    image: img6,
   }
 ];
 
