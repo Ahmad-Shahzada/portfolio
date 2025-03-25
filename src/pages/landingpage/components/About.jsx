@@ -15,7 +15,7 @@ const AboutSection = () => {
       <Sectionwraper>
         <div className="container px-4 sm:px-6 lg:px-8">
           <motion.h2
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-8 text-blue-600 dark:text-blue-400 text-center pt-20"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-8 bg-gradient-to-r from-blue-500 to-purple-700 bg-clip-text text-transparent text-center pt-20"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}

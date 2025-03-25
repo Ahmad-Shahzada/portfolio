@@ -67,7 +67,7 @@ export default function SkillsSection() {
       <Sectionwraper>
         <section className="text-black dark:text-white text-center">
           <motion.h2
-            className="pb-10 text-5xl font-extrabold mb-8 pt-20 md:pt-0 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300"
+            className="pb-10 text-5xl font-extrabold mb-8 pt-20 md:pt-0 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-700 "
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}

@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="pb-5 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-20 md:pt-52 md:pb-14 flex items-center"
+      className="pb-5 h-screen bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-20 md:pt-52 md:pb-14 flex items-center"
     >
       <Sectionwraper>
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
@@ -29,7 +29,7 @@ const Hero = () => {
             </h1>
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold dark:text-white text-black">
               I'm
-              <span className="pl-3 text-blue-400">
+              <span className="pl-3 bg-gradient-to-r from-blue-500 to-purple-700 bg-clip-text text-transparent ">
                 <Typewriter
                   words={[
                     "a Web Developer",
@@ -46,13 +46,13 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="dark:text-gray-400 text-center sm:text-start text-gray-700 sm:text-xl sm:max-w-[80%] mx-auto lg:mx-0 pb-4">
+            <h1 className="dark:text-gray-400 text-center sm:text-start text-gray-700 sm:text-xl sm:max-w-[80%] mx-auto lg:mx-0 pb-4">
               Building modern, responsive, and intuitive web applications that
               solve real-world problems.{" "}
               <span className="hidden sm:block">
                 And deliver exceptional user experiences.
               </span>
-            </p>
+            </h1>
             <motion.div
               className="flex justify-center lg:justify-start mt-6 space-x-6"
               initial={{ opacity: 0, y: 20 }}
@@ -102,7 +102,7 @@ const Hero = () => {
                   href={item.href}
                   target="_blank"
                   className="p-5 w-[40px] h-[40px] flex items-center justify-center rounded-full mb-4
-      backdrop-blur-md bg-white dark:bg-white/10 border border-white/20 
+      backdrop-blur-md bg-gradient-to-r from-blue-500 to-purple-700 bg-clip-text text-transparent border border-white/20 
       shadow-[0px_0px_15px_rgba(59,130,246,0.8)] transition-all duration-300"
                   whileHover={{
                     scale: 1.4, // Pop-out effect
@@ -126,7 +126,7 @@ const Hero = () => {
             </motion.div>
             <CoolMode>
               <Button className="relative z-10 px-6 py-3 text-lg font-semibold rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 transform hover:scale-105">
-                Click Me!
+                Lets Talk
               </Button>
             </CoolMode>
 

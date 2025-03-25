@@ -50,7 +50,7 @@ const Navbar = () => {
               to="home"
               smooth
               duration={800}
-              className="text-2xl font-bold text-blue-600 dark:text-blue-400 cursor-pointer flex items-center"
+              className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-boldcursor-pointer flex items-center"
             >
               <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 flex items-center justify-center font-bold mr-2">
                 AP
