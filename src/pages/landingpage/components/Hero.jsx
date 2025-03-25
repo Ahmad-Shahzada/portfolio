@@ -22,7 +22,7 @@ const Hero = () => {
             <h3 className="text-3xl sm:text-[35px] dark:text-gray-300 text-black">
               Hello, It's Me
             </h3>
-            <h1 className="text-4xl sm:text-6xl font-extrabold py-3 dark:text-white text-black">
+            <h1 className="text-3xl sm:text-6xl font-extrabold py-3 dark:text-white text-black">
               Ahmad Shahzad
             </h1>
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold dark:text-white text-black">
@@ -44,12 +44,11 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="dark:text-gray-400 text-gray-700 sm:text-lg sm:max-w-[80%] mx-auto lg:mx-0 pb-4">
-              I’m Ahmad Shahzad, a passionate Web Developer who loves crafting
-              elegant and functional websites.
+            <p className="dark:text-gray-400 text-center sm:text-start text-gray-700 sm:text-xl sm:max-w-[80%] mx-auto lg:mx-0 pb-4">
+              Building modern, responsive, and intuitive web applications that
+              solve real-world problems.{" "}
               <span className="hidden sm:block">
-                Building modern, responsive & interactive websites that bring
-                ideas to life.
+                And deliver exceptional user experiences.
               </span>
             </p>
             <motion.div

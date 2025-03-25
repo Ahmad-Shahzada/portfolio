@@ -1,110 +1,165 @@
-import React, { useState, useContext } from "react";
-import { Link } from "react-scroll"; 
-import { FiMenu, FiX } from "react-icons/fi";
-import { motion } from "framer-motion";
-import Sectionwraper from "./Sectionwraper";
-import { ThemeContext } from "../context/ThemeProvider";
+import React, { useState, useContext, useEffect } from "react";
+import { Link } from "react-scroll";
+import {
+  FiMenu,
+  FiX,
+  FiHome,
+  FiUser,
+  FiCode,
+  FiFolder,
+  FiMail,
+} from "react-icons/fi";
 import { BsSun, BsMoon } from "react-icons/bs";
+import { motion, AnimatePresence } from "framer-motion";
+import { ThemeContext } from "../context/ThemeProvider";
+import Sectionwraper from "./Sectionwraper";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
 
+  const navLinks = [
+    { name: "Home", to: "home", icon: <FiHome size={20} /> },
+    { name: "About", to: "about", icon: <FiUser size={20} /> },
+    { name: "Skills", to: "skills", icon: <FiCode size={20} /> },
+    { name: "Projects", to: "projects", icon: <FiFolder size={20} /> },
+    { name: "Contact", to: "contact us", icon: <FiMail size={20} /> },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed w-full z-10">
-      <nav className=" bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] border-b-2 border-gray-300 dark:border-gray-600 text-black dark:text-white py-4 shadow-lg">
-        <Sectionwraper>
-          <div className="mx-auto flex justify-between items-center">
-            
-            <Link className="text-4xl font-extrabold text-blue-600 dark:text-blue-400 transition-transform duration-300 transform hover:scale-110 hover:shadow-lg">
+    <header
+  className={`px-7 sm:px-0 pr- sm:pr-0 fixed w-full z-50 transition-all duration-300 ${
+    isScrolled
+      ? "py-3 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] shadow-lg"
+      : "py-4 bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]"
+  }`}
+>
+      <Sectionwraper>
+        <nav className="container mx-auto  flex justify-between items-center">
+          <motion.div whileHover={{ scale: 1.05 }}>
+            <Link
+              to="home"
+              smooth
+              duration={800}
+              className="text-2xl font-bold text-blue-600 dark:text-blue-400 cursor-pointer flex items-center"
+            >
+              <div className="w-10 h-10 rounded-full bg-blue-600 dark:bg-blue-400 flex items-center justify-center text-white font-bold mr-2">
+                AP
+              </div>
+              <span className="hidden md:block text-gray-500 dark:text-white pr-2">
+                Ahmad
+              </span>
               Portfolio
             </Link>
-            <div>
-              {/* Desktop Navigation */}
-              <ul className="hidden md:flex space-x-6 text-xl items-center">
-                {["home", "about", "skills", "projects", "contact us"].map(
-                  (item) => (
-                    <Link
-                      key={item}
-                      to={item}
-                      smooth={true}
-                      duration={800}
-                      className="relative text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 group cursor-pointer"
-                    >
-                      {item.charAt(0).toUpperCase() + item.slice(1)}
-                      <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-blue-600 dark:bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-                    </Link>
-                  )
-                )}
+          </motion.div>
 
-                {/* Theme Toggle Button */}
-                <button
-                  onClick={toggleTheme}
-                  className="p-2 rounded-full border border-gray-500 bg-gray-100 dark:bg-gray-800 dark:border-gray-600 text-black dark:text-white transition"
-                >
-                  {theme === "dark" ? (
-                    <BsSun className="text-yellow-400" />
-                  ) : (
-                    <BsMoon />
-                  )}
-                </button>
-              </ul>
-            </div>
-
-            {/* Mobile Menu Icon */}
-            <button
+          <div className="hidden md:flex space-x-6 items-center">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.to}
+                smooth
+                duration={800}
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all flex gap-2 cursor-pointer"
+              >
+                {link.icon} {link.name}
+              </Link>
+            ))}
+            <motion.button
               onClick={toggleTheme}
-              className="p-2 -m-20 sm:hidden rounded-full border border-gray-500 bg-gray-100 dark:bg-gray-800 dark:border-gray-600 text-black dark:text-white transition"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800"
             >
               {theme === "dark" ? (
                 <BsSun className="text-yellow-400" />
               ) : (
                 <BsMoon />
               )}
-            </button>
-            <div
-              className="md:hidden text-3xl text-black dark:text-white cursor-pointer"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <FiMenu />
-            </div>
+            </motion.button>
           </div>
 
-          {/* Mobile Navigation */}
+          <div className="md:hidden flex items-center">
+            <motion.button
+              onClick={toggleTheme}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800"
+            >
+              {theme === "dark" ? (
+                <BsSun className="text-yellow-400" />
+              ) : (
+                <BsMoon />
+              )}
+            </motion.button>
+            <motion.button
+              onClick={() => setIsOpen(!isOpen)}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="p-2 ml-4 rounded-full bg-gray-100 dark:bg-gray-800"
+            >
+              {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+            </motion.button>
+          </div>
+        </nav>
+
+        <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              transition={{ duration: 0.3 }}
-              className="fixed top-0 right-0 w-full h-full bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202] py-6 px-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/60 z-40"
             >
-              <div className="flex justify-end">
-                <FiX
-                  className="text-black dark:text-white text-3xl cursor-pointer"
-                  onClick={() => setIsOpen(false)}
-                />
-              </div>
-              <ul className="flex flex-col items-center mt-8 space-y-6">
-                {["home", "about", "skills", "projects", "contact us"].map(
-                  (item) => (
+              <motion.div
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "100%" }}
+                transition={{ type: "spring", damping: 20, stiffness: 200 }}
+                className="absolute right-0 top-0 h-full w-3/4 bg-whi dark:bg-[#0a0a0a] p-6 shadow-lg"
+              >
+                <div className="flex justify-end mb-4">
+                  <motion.button
+                    onClick={() => setIsOpen(false)}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-800"
+                  >
+                    <FiX
+                      size={24}
+                      className="text-gray-700 dark:text-gray-300"
+                    />
+                  </motion.button>
+                </div>
+                <ul className="space-y-6">
+                  {navLinks.map((link) => (
                     <Link
-                      key={item}
-                      to={item}
-                      smooth={true}
+                      key={link.name}
+                      to={link.to}
+                      smooth
                       duration={800}
-                      className="text-lg text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition duration-300 cursor-pointer"
+                      className="gap-2 text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex cursor-pointer"
                       onClick={() => setIsOpen(false)}
                     >
-                      {item.charAt(0).toUpperCase() + item.slice(1)}
+                      {link.icon} {link.name}
                     </Link>
-                  )
-                )}
-              </ul>
+                  ))}
+                </ul>
+              </motion.div>
             </motion.div>
           )}
-        </Sectionwraper>
-      </nav>
-    </div>
+        </AnimatePresence>
+      </Sectionwraper>
+    </header>
   );
 };
 
