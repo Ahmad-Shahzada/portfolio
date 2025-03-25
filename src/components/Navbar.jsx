@@ -52,7 +52,7 @@ const Navbar = () => {
               duration={800}
               className="text-2xl font-bold text-blue-600 dark:text-blue-400 cursor-pointer flex items-center"
             >
-              <div className="w-10 h-10 rounded-full bg-blue-600 dark:bg-blue-400 flex items-center justify-center text-white font-bold mr-2">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 flex items-center justify-center font-bold mr-2">
                 AP
               </div>
               <span className="hidden md:block text-gray-500 dark:text-white pr-2">

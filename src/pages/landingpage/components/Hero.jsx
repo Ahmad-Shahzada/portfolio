@@ -4,6 +4,8 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import myImg from "../../../../public/assets/images/bg1.png";
+import { Button } from "@/components/ui/button";
+import { CoolMode } from "@/components/magicui/cool-mode";
 
 const Hero = () => {
   return (
@@ -122,19 +124,11 @@ const Hero = () => {
                 </motion.a>
               ))}
             </motion.div>
-
-            <motion.button
-              to="contact us"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 text-lg font-semibold text-white transition-all duration-300 
-             bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full shadow-lg 
-             hover:shadow-[0px_0px_20px_rgba(59,130,246,0.7)] 
-             active:shadow-[0px_0px_30px_rgba(59,130,246,0.8)] 
-             border-2 border-transparent hover:border-blue-300"
-            >
-              Let's Talk
-            </motion.button>
+            <CoolMode>
+              <Button className="relative z-10 px-6 py-3 text-lg font-semibold rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 transform hover:scale-105">
+                Click Me!
+              </Button>
+            </CoolMode>
 
             {/* Social Media Icons */}
           </motion.div>
