@@ -123,7 +123,7 @@ const AboutSection = () => {
               (tech, idx) => (
                 <span
                   key={idx}
-                  className="px-4 py-3 text-sm font-semibold rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md hover:scale-105 transition"
+                  className="px-4 py-2 text-sm font-semibold rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md hover:scale-105 transition"
                 >
                   {tech}
                 </span>
