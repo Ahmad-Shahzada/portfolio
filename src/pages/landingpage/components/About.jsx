@@ -11,7 +11,7 @@ const cardVariants = {
 
 const AboutSection = () => {
   return (
-    <div id="about" className=" bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]">
+    <div className=" bg-white dark:bg-gradient-to-r from-[#0a0a0a] via-[#0d1b34] to-[#020202]">
       <Sectionwraper>
         <div className="container px-4 sm:px-6 lg:px-8">
           <motion.h2

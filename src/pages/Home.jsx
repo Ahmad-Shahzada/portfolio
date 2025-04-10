@@ -4,7 +4,6 @@ import AboutSection from './landingpage/components/About'
 import Skills from './landingpage/components/Skill'
 import Projects from './landingpage/components/Project'
 import ContactUs from './landingpage/components/Contact-us'
-import Footer from './landingpage/components/footer'
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
         <Skills/>
         <Projects/>
         <ContactUs/>
-        <Footer/>
     </div>
   )
 }
