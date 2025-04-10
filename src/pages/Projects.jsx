@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Sectionwraper from "/src/components/Sectionwraper";
-import img1 from "../../../portfolio/public/assets/images/ecommerce.png";
-import img2 from "../../../portfolio/public/assets/images/Travel.png";
-import img3 from "../../../portfolio/public/assets/images/resturent.png";
-import img4 from "../../../portfolio/public/assets/images/redux.png";
-import img5 from "../../../portfolio/public/assets/images/to-do.png";
-import img6 from "../../../portfolio/public/assets/images/form.png";
+import img1 from "../../public/assets/images/ecommerce.png";
+import img2 from "../../portfolio/public/assets/images/Travel.png";
+import img3 from "../../portfolio/public/assets/images/resturent.png";
+import img4 from "../../portfolio/public/assets/images/redux.png";
+import img5 from "../../portfolio/public/assets/images/to-do.png";
+import img6 from "../../portfolio/public/assets/images/form.png";
 
 
 
