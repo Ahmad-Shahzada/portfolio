@@ -13,10 +13,10 @@ const projects = [
   },
   {
     title: "Project Two",
-    description: "A beautiful multi pages travel website using HTML , CSS ",
-    link: "https://ahmad-shahzada.github.io/TRAVEL/",
-    github: "https://github.com/Ahmad-Shahzada/TRAVEL",
-    image: "/assets/images/Travel.png"
+    description: "A beautiful ui calculator using HTML , CSS , Javascript",
+    link: "https://ahmad-shahzada.github.io/calculator/",
+    github: "https://github.com/Ahmad-Shahzada/calculator",
+    image: "/assets/images/calculator.png"
   },
   {
     title: "Project Three",
@@ -55,7 +55,7 @@ const Projects = () => {
         <section className="pt-10 text-white">
           <div className="container mx-auto text-center">
             <motion.h2 
-              className="bg-gradient-to-r from-blue-500 to-purple-700 bg-clip-text text-transparent text-5xl font-bold mb-14"
+              className="pt-14 bg-gradient-to-r from-blue-500 to-purple-700 bg-clip-text text-transparent text-5xl font-bold mb-14"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}

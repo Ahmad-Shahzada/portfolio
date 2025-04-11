@@ -21,10 +21,10 @@ const projects = [
   },
   {
     title: "Project Two",
-    description: "A beautiful multi pages travel website using HTML , CSS ",
-    link: "https://ahmad-shahzada.github.io/TRAVEL/",
-    github: "https://github.com/Ahmad-Shahzada/TRAVEL",
-    image: img2
+    description: "A beautiful ui calculator using HTML , CSS , Javascript",
+    link: "https://ahmad-shahzada.github.io/calculator/",
+    github: "https://github.com/Ahmad-Shahzada/calculator",
+    image: "/assets/images/calculator.png"
   },
   {
     title: "Project Three",
