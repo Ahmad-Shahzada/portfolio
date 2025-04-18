@@ -21,7 +21,7 @@ const Hero = () => {
             className="text-center lg:text-left lg:w-1/2 space-y-4 px-5 sm:px-10 lg:px-0"
           >
             <h3 className="text-3xl sm:text-[35px] dark:text-gray-300 text-black">
-              Hello, It's me
+              Hello, It's Me
             </h3>
             <h1 className="text-3xl sm:text-6xl font-extrabold py-3 dark:text-white text-black">
               Ahmad Shahzad
