@@ -3,10 +3,6 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaFacebook,
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Sectionwraper from "/src/components/Sectionwraper";
