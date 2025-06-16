@@ -32,7 +32,7 @@ export default function Footer() {
       
       {/* Copyright */}
       <div className="text-center text-gray-500 text-sm mt-6 border-t border-gray-700 pt-6">
-        &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+        &copy; {new Date().getFullYear()} Portfolio. All rights reserved.
       </div>
     </footer>
     </Sectionwraper>

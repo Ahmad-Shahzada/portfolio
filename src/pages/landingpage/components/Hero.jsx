@@ -101,8 +101,8 @@ const Hero = () => {
                   href={item.href}
                   target="_blank"
                   className="p-5 w-[40px] h-[40px] flex items-center justify-center rounded-full mb-4
-      backdrop-blur-md bg-gradient-to-r from-blue-500 to-purple-700 bg-clip-text text-transparent border border-white/20 
-      shadow-[0px_0px_15px_rgba(59,130,246,0.8)] transition-all duration-300"
+       backdrop-blur-md bg-gradient-to-r from-blue-500 to-purple-700 bg-clip-text text-transparent border border-white/20 
+       shadow-[0px_0px_15px_rgba(59,130,246,0.8)] transition-all duration-300"
                   whileHover={{
                     scale: 1.4, // Pop-out effect
                     rotate: 5,
@@ -124,8 +124,8 @@ const Hero = () => {
               ))}
             </motion.div>
             <CoolMode>
-              <Button className="relative z-10 px-6 py-3 text-lg font-semibold rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 transform hover:scale-105">
-                Lets Talk
+              <Button href="/cv/Resume.pdf" className="relative z-10 px-6 py-3 text-lg font-semibold rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-purple-600 hover:to-blue-500 transition-all duration-300 transform hover:scale-105">
+                lets Talk
               </Button>
             </CoolMode>
 
@@ -144,8 +144,8 @@ const Hero = () => {
               src={myImg}
               alt="Profile"
               className="rounded-[80%] w-[70%] sm:w-[60%] md:w-[50%] lg:w-[400px] lg:ml-60 
-          shadow-[0px_0px_40px_rgba(59,130,246,0.7),0px_0px_80px_rgba(139,92,246,0.7),0px_0px_100px_rgba(59,130,246,0.5)] 
-          transition-all duration-500 mb-16 md:mb-0 "
+           shadow-[0px_0px_40px_rgba(59,130,246,0.7),0px_0px_80px_rgba(139,92,246,0.7),0px_0px_100px_rgba(59,130,246,0.5)] 
+           transition-all duration-500 mb-16 md:mb-0 "
               whileHover={{ scale: 1.1 }}
             />
           </motion.div>
